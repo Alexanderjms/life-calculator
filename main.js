@@ -27,22 +27,21 @@ document.addEventListener("DOMContentLoaded", function () {
   const inputMonth = form.querySelector('input[name="month"]');
   const inputYear = form.querySelector('input[name="year"]');
 
-  const yearsSpan = form.querySelector(
-    "div.flex.flex-col .flex.items-center:nth-child(1) .text-purple-500"
-  );
-  const monthsSpan = form.querySelector(
-    "div.flex.flex-col .flex.items-center:nth-child(2) .text-purple-500"
-  );
-  const daysSpan = form.querySelector(
-    "div.flex.flex-col .flex.items-center:nth-child(3) .text-purple-500"
-  );
+  [inputDay, inputMonth, inputYear].forEach((input) => {
+    input.addEventListener("input", function () {
+      this.value = this.value.replace(/[^0-9]/g, "");
+    });
+  });
+
+  const yearsSpan = form.querySelector(".text-yellow-400.font-bold");
+  const monthsSpan = form.querySelector(".text-blue-400.font-bold");
+  const daysSpan = form.querySelector(".text-purple-500.font-bold");
 
   form.addEventListener("submit", function (e) {
     e.preventDefault();
     const day = parseInt(inputDay.value, 10);
     const month = parseInt(inputMonth.value, 10);
     const year = parseInt(inputYear.value, 10);
-    const currentYear = new Date().getFullYear();
 
     if (isNaN(day) || day < 1 || day > 31) {
       alert("El día debe estar entre 1 y 31");
@@ -50,6 +49,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     if (isNaN(month) || month < 1 || month > 12) {
       alert("El mes debe estar entre 1 y 12");
+      return;
+    }
+    if (isNaN(year) || year < 0 || year > 9999) {
+      alert("El año debe estar entre 0 y 9999");
       return;
     }
 
@@ -62,6 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (days < 0) {
       months--;
+      // Días del mes anterior
       const prevMonth = new Date(now.getFullYear(), now.getMonth(), 0);
       days += prevMonth.getDate();
     }
@@ -69,8 +73,6 @@ document.addEventListener("DOMContentLoaded", function () {
       years--;
       months += 12;
     }
-
-    console.log("Años:", years, "Meses:", months, "Días:", days);
 
     if (yearsSpan) yearsSpan.textContent = years;
     if (monthsSpan) monthsSpan.textContent = months;
