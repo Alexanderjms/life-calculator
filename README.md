@@ -15,6 +15,7 @@
 - Visualizar el paso del tiempo de forma divertida.
 
 <img width="854" height="714" alt="image" src="https://github.com/user-attachments/assets/ae7b29e2-089d-44a3-a92d-2c0ab85d012c" />
+<img width="861" height="714" alt="image" src="https://github.com/user-attachments/assets/67f27944-f0d3-4bfd-8033-92b52aff5866" />
 
 
 ---
