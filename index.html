@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Micro+5&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+  </head>
+  <body class="bg-[#f0f0f0]">
+    <div
+      class="text-7xl font-semibold micro mt-8 flex justify-center text-center"
+    >
+      <span class="jump-letter text-yellow-400">L</span>
+      <span class="jump-letter text-blue-400">i</span>
+      <span class="jump-letter text-purple-500">f</span>
+      <span class="jump-letter text-pink-400">e</span>
+      <span class="jump-letter">&nbsp;</span>
+      <span class="jump-letter text-yellow-400">C</span>
+      <span class="jump-letter text-blue-400">a</span>
+      <span class="jump-letter text-purple-500">l</span>
+      <span class="jump-letter text-pink-400">c</span>
+      <span class="jump-letter text-yellow-400">u</span>
+      <span class="jump-letter text-blue-400">l</span>
+      <span class="jump-letter text-purple-500">a</span>
+      <span class="jump-letter text-pink-400">t</span>
+      <span class="jump-letter text-yellow-400">o</span>
+      <span class="jump-letter text-blue-400">r</span>
+    </div>
+
+    <div class="flex justify-center items-center mt-8 micro">
+      <form
+        method="post"
+        class="bg-white border border-gray-300 rounded-lg w-full max-w-xs sm:max-w-2xl p-4 sm:p-8 shadow-lg sm:shadow-none mx-auto"
+        style="box-sizing: border-box"
+      >
+        <div
+          class="flex flex-col sm:flex-row gap-6 sm:gap-20 mt-4 sm:mt-8 sm:ml-6 w-full justify-center items-center"
+        >
+          <div class="flex flex-col items-center">
+            <span
+              class="text-2xl font-semibold text-gray-400 tracking-widest mb-2"
+              >DAY</span
+            >
+            <div
+              class="bg-white border border-gray-300 rounded-lg w-24 h-20 flex items-center justify-center"
+            >
+              <input
+                type="text"
+                maxlength="2"
+                placeholder="DD"
+                name="day"
+                class="text-3xl font-bold text-gray-400 bg-white border-none outline-none w-full h-full text-center"
+              />
+            </div>
+          </div>
+          <div class="flex flex-col items-center">
+            <span
+              class="text-2xl font-semibold text-gray-400 tracking-widest mb-2"
+              >MONTH</span
+            >
+            <div
+              class="bg-white border border-gray-300 rounded-lg w-24 h-20 flex items-center justify-center"
+            >
+              <input
+                type="text"
+                maxlength="2"
+                placeholder="MM"
+                name="month"
+                class="text-3xl font-bold text-gray-400 bg-white border-none outline-none w-full h-full text-center"
+              />
+            </div>
+          </div>
+          <div class="flex flex-col items-center">
+            <span
+              class="text-2xl font-semibold text-gray-400 tracking-widest mb-2"
+              >YEAR</span
+            >
+            <div
+              class="bg-white border border-gray-300 rounded-lg w-24 h-20 flex items-center justify-center"
+            >
+              <input
+                type="text"
+                maxlength="4"
+                placeholder="YYYY"
+                name="year"
+                class="text-3xl font-bold text-gray-400 bg-white border-none outline-none w-full h-full text-center"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 m-4 sm:m-8 w-full"
+        >
+          <hr class="flex-1 border-gray-300 w-full sm:w-auto" />
+          <button type="submit" class="btn w-full sm:w-auto mr-4">
+            <svg
+              height="24"
+              width="24"
+              fill="#FFFFFF"
+              viewBox="0 0 24 24"
+              data-name="Layer 1"
+              id="Layer_1"
+              class="sparkle"
+            >
+              <path
+                d="M10,21.236,6.755,14.745.264,11.5,6.755,8.255,10,1.764l3.245,6.491L19.736,11.5l-6.491,3.245ZM18,21l1.5,3L21,21l3-1.5L21,18l-1.5-3L18,18l-3,1.5ZM19.333,4.667,20.5,7l1.167-2.333L24,3.5,21.667,2.333,20.5,0,19.333,2.333,17,3.5Z"
+              ></path>
+            </svg>
+            <span class="text">Generate</span>
+          </button>
+        </div>
+
+        <div
+          class="micro text-4xl sm:text-7xl flex flex-col justify-center items-center sm:items-start gap-2 mt-6 ml-0 sm:ml-20 w-full"
+        >
+          <div class="flex items-center justify-center sm:justify-start w-full">
+            <span class="text-purple-500 font-bold mr-2">--</span>
+            <span class="font-bold lowercase">years</span>
+          </div>
+          <div class="flex items-center justify-center sm:justify-start w-full">
+            <span class="text-purple-500 font-bold mr-2">--</span>
+            <span class="font-bold lowercase">months</span>
+          </div>
+          <div class="flex items-center justify-center sm:justify-start w-full">
+            <span class="text-purple-500 font-bold mr-2">--</span>
+            <span class="font-bold lowercase">days</span>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
