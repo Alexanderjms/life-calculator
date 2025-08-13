@@ -21,4 +21,4 @@
 
 Desarrollado por [AlexanderJMS](https://github.com/Alexanderjms)
 
-Mi perfil de LinkedIN: [LinkedIn](https://www.linkedin.com/in/alexanderjms/)
+Mi perfil de LinkedIn: [LinkedIn](https://www.linkedin.com/in/alexanderjms/)
