@@ -8,17 +8,15 @@
 - Haz clic en "Generate".
 - La página te mostrará el tiempo transcurrido desde esa fecha hasta hoy, en años, meses y días.
 
-## Características
-
-- Diseño moderno y responsivo para cualquier dispositivo.
-- Animaciones coloridas y tipografía personalizada.
-- Validación de datos para evitar errores.
-
 ## ¿Para qué sirve?
 
 - Saber tu edad exacta en años, meses y días.
 - Calcular el tiempo desde cualquier evento importante.
 - Visualizar el paso del tiempo de forma divertida.
+
+<img width="854" height="714" alt="image" src="https://github.com/user-attachments/assets/ae7b29e2-089d-44a3-a92d-2c0ab85d012c" />
+<img width="861" height="714" alt="image" src="https://github.com/user-attachments/assets/67f27944-f0d3-4bfd-8033-92b52aff5866" />
+
 
 ---
 
